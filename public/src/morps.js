@@ -1,4 +1,7 @@
 const Timeout = setTimeout(delay, 4000);
+function delay() {
+  window.location = "welcome.html";
+}
 window.onload = function () {
   const elts = {
     text1: document.getElementById("text1"),
@@ -13,7 +16,7 @@ window.onload = function () {
   ];
 
   const morphTime = 1;
-  const cooldownTime = 0.25;
+  const cooldownTime = 0.3;
 
   let textIndex = 0;
   let time = new Date();
